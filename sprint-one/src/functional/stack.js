@@ -14,6 +14,7 @@ var Stack = function() {
 
   someInstance.pop = function() {
     var removed = storage[currentSize]
+    delete storage[currentSize]
     if (currentSize > 0){
       currentSize--
     }

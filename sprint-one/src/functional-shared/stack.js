@@ -25,7 +25,9 @@ var stackMethods = {
   pop: function(){
     if (this.currentSize > 0){
       this.currentSize--;
-      return this.decObj[this.currentSize]
+      var current = this.decObj[this.currentSize]
+      delete this.decObj[this.currentSize]
+      return current
     }
   }
 };
