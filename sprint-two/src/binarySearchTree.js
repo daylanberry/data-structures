@@ -42,11 +42,9 @@ methods.contains = function(value){
   }
 
   if (value < currentValue){
-    currentValue = this.left.value
     return this.left.contains(value)
 
   } else if (value > currentValue){
-    currentValue = this.right.value
     return this.right.contains(value)
   }
 }
